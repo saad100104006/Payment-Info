@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/add_payment"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/ic_edit_text_bg"
+            android:hint="@string/amount"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/ic_spinner_bg"
+            android:entries="@array/payment_provider" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/provider"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/ic_edit_text_bg"
+            android:ellipsize="end"
+            android:hint="@string/provider"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/transaction_reference"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/ic_edit_text_bg"
+            android:ellipsize="end"
+            android:hint="@string/trans_ref"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="32dp"
+                android:layout_toStartOf="@+id/ok_button"
+                android:text="@string/cancel"
+                android:textAllCaps="true"
+                android:textColor="@color/borderColor"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ok_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_rounded_btn_bg"
+                android:text="@string/ok"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:cornerRadius="6dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</layout>
