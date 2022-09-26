@@ -19,6 +19,8 @@
     <string name="total_amount">Total Amount=</string>
     <string name="payment">Payments</string>
     <string name="save">Save</string>
+    <string name="click_save">Click Save to update this change</string>
+    <string name="payment_exists">Payment exists against this type</string>
 
     <string-array name="payment_provider">
         <item>Cash</item>

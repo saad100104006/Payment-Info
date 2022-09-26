@@ -53,7 +53,7 @@ public class InputDialogFragment extends DialogFragment {
                 mOnInputListener.sendInput(payment);
                 dismiss();
             }
-            showToast("Click Save to update this change", getActivity());
+            showToast(getActivity().getResources().getString(R.string.click_save), getActivity());
         });
 
         binding.cancelButton.setOnClickListener(view1 -> dismiss());

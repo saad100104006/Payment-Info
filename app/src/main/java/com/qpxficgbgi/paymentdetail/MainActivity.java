@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements OnInputListener {
                     paymentArrayList.remove(position);
                     binding.paymentDataContainer.removeViewAt(position);
                 }
-                showToast("Click Save to update this change", this);
+                showToast(getResources().getString(R.string.click_save), this);
             });
 
             binding.paymentDataContainer.addView(chip);
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity implements OnInputListener {
             showViewForPaymentDetail();
             toggleSavedButtonState(true);
         } else {
-            showToast("Payment exist against this type", this);
+            showToast(getResources().getString(R.string.payment_exists), this);
         }
     }
 
