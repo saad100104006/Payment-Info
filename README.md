@@ -3,7 +3,7 @@ The goal is to create a simple Android (Java) application that takes details of 
 saves the details to a file.
 
 
-Main activity
+#Main activity
 
 
 As soon as the application launches, the main activity should be displayed. This activity allows the user to enter
@@ -12,15 +12,17 @@ The user should be able to click the ‘Add payment’ link and add details of t
 box that pops up.
 Up to three different types of payment (cash, bank transfer or credit card) can be added by the user. Each type of
 payment can be added only once (for example, the user cannot add two cash payments).
-The total amount should be updated whenever a payment is added or removed2
+The total amount should be updated whenever a payment is added or removed
 
-. The total amount cannot be edited. 
+ The total amount cannot be edited. 
 
 
 
 A payment can be removed by pressing on the ‘x’ button next to the chip that shows the payment).
 Each added payment is displayed in the main activity a delete-able chip – a chip is a standard Android Material
 Design view class.
+
+
 Saving the entered data
 Once the user clicks ‘Save’, write all the entered details (the different payment types, amounts, provider and
 transaction reference, if any) to a text file called ‘LastPayment.txt’. Save the data in JSON format.
