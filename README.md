@@ -4,6 +4,8 @@ saves the details to a file.
 
 
 Main activity
+
+
 As soon as the application launches, the main activity should be displayed. This activity allows the user to enter
 details payment made to someone, as shown above.
 The user should be able to click the ‘Add payment’ link and add details of the payment (show above) in the dialog
@@ -12,8 +14,10 @@ Up to three different types of payment (cash, bank transfer or credit card) can 
 payment can be added only once (for example, the user cannot add two cash payments).
 The total amount should be updated whenever a payment is added or removed2
 
-. The total amount cannot be
-edited. 
+. The total amount cannot be edited. 
+
+
+
 A payment can be removed by pressing on the ‘x’ button next to the chip that shows the payment).
 Each added payment is displayed in the main activity a delete-able chip – a chip is a standard Android Material
 Design view class.
@@ -22,6 +26,9 @@ Once the user clicks ‘Save’, write all the entered details (the different pa
 transaction reference, if any) to a text file called ‘LastPayment.txt’. Save the data in JSON format.
 When the application starts again, the activity should load the payment details back from the file (if it exists), and
 the application should behave exactly as it would have at the time the details were saved.
+
+
+
 Add Payment dialog
 This dialog allows the user to add a payment.
 This dialog must only display in the spinner the types of payments that have not already been added before – so, if
